@@ -10,3 +10,14 @@ for i = 1:n + m - 1
         y(i) = y(i) + b(j) * x(i - j + 1);
     end
 end
+
+
+figure(1);
+subplot(2, 1, 1);
+stem(x);
+title('Entrada');
+
+subplot(2, 1, 2);
+stem(y);
+title('Saida');
+
